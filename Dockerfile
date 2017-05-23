@@ -2,9 +2,6 @@ FROM php:7.1.5-alpine
 
 ENTRYPOINT ["php-cs-fixer"]
 
-WORKDIR /src
-VOLUME /src
-
 ENV COMPOSER_ALLOW_SUPERUSER "1"
 ENV COMPOSER_BIN_DIR "/usr/local/bin/"
 ENV COMPOSER_VENDOR_DIR "/usr/local/lib/"
